@@ -1,6 +1,6 @@
 module BacenSGS
 
-using HTTP, Date, DataFrames
+using HTTP, Dates, DataFrames
 
 """
     valores_indicador(indicador::Integer;dtInicial::Dates.Date = Date(2018),dtFinal=missing)
