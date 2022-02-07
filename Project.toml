@@ -3,6 +3,12 @@ uuid = "cf000e6a-8cd9-4459-9820-c8fff5d8f25f"
 authors = ["Gustavo H T Cardoso <ghtcardoso@icloud.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+JSON3 = "0f8b85d8-7281-11e9-16c2-39a750bddbf1"
+
 [compat]
 julia = "1.6"
 
