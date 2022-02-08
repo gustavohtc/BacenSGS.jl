@@ -1,7 +1,7 @@
 name = "BacenSGS"
 uuid = "cf000e6a-8cd9-4459-9820-c8fff5d8f25f"
 authors = ["Gustavo H T Cardoso <ghtcardoso@icloud.com> and contributors"]
-version = "0.1.0"
+version = "0.1.2"
 
 [deps]
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
