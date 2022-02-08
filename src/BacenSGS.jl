@@ -119,6 +119,7 @@ function timeseries_values(timeseries::Vector;dtInicial::Dates.Date=Date(2018),d
 end
 
 
+
 export timeserie_value, timeseries_values, search_timeseries
 
 end
