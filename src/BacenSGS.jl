@@ -69,11 +69,11 @@ function serialize_form(params)
 end
 
 """
-    function get_timeseries(query)
+    function search_timeseries(query)
 
 Localiza séries por `query` - código(Integer) ou texto(String)
 """
-function get_timeseries(query)
+function search_timeseries(query)
     init_search_session()
     (searchMethod, tipo,codigo,texto) = get_tipo_busca(query)
     url = "https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?"
@@ -119,6 +119,6 @@ function timeseries_values(timeseries::Vector;dtInicial::Dates.Date=Date(2018),d
 end
 
 
-export valores_indicador, valores_indicadores
+export timeserie_value, timeseries_values, search_timeseries
 
 end
