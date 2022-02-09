@@ -11,9 +11,9 @@ function timeserie_value(indicador::Integer;dtInicial::Dates.Date=Date(2018),dtF
         return DataFrame()
     end
     r = resp.body |> String |> JSON3.read |> DataFrame
-    r[!,:dt_referencia] = r.data .|> x-> Dates.Date(x,dateformat"dd/mm/yyyy")
+    r[!,:date] = r.data .|> x-> Dates.Date(x,dateformat"dd/mm/yyyy")
     r[!,:indicador] .= indicador
-    r[!,:vl_realizado] = r.valor .|> x->0.01parse(Float64,x)
+    r[!,:value] = r.valor .|> x->0.01parse(Float64,x)
     select(r,Not([:data,:valor]))
 end
 
