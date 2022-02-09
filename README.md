@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This package provides a interface for [Banco Central do Brasil](http://www.bcb.gov.br) [SGS - Sistema Gerenciador de Séries Temporais](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries) Api`. 
+This package provides a interface for the [SGS - Sistema Gerenciador de Séries Temporais](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries) api of [Banco Central do Brasil](http://www.bcb.gov.br). 
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://gustavohtc.github.io/BacenSGS.jl/stable)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://gustavohtc.github.io/BacenSGS.jl/dev)
