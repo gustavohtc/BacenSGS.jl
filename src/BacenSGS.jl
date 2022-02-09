@@ -2,12 +2,6 @@ module BacenSGS
 
 using HTTP, Dates, DataFrames,JSON3, Gumbo, StringEncodings, ProgressLogging
 
-"""
-    valores_indicador(indicador::Integer;dtInicial::Dates.Date = Date(2018),dtFinal=missing)
-
-Retorna os valores das séries tempórais do Banco Central para o indicador (Código SGS)
-"""
-
 const SEARCH_URL = Dict("pt"=>"https://www3.bcb.gov.br/sgspub/index.jsp?idIdioma=P", "en"=>"https://www3.bcb.gov.br/sgspub/index.jsp")
 
 function timeserie_value(indicador::Integer;dtInicial::Dates.Date=Date(2018),dtFinal=missing)
